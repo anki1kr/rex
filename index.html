@@ -1,84 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--jo head of website pe show hoga-->
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>just practice</title>
+    <title>My HTML & C Programs</title>
+    <style>
+        /* Overall body style */
+        body {
+            background-color: #2d2d2d;
+            /* Dark background for a "programmer" feel */
+            color: #f1f1f1;
+            /* Light text for contrast */
+            font-family: 'Courier New', Courier, monospace;
+            /* Monospace font for code-like feel */
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* Centering the content */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #1abc9c;
+            /* Green color for the main heading */
+            font-size: 3em;
+            margin-top: 20px;
+        }
+
+        p {
+            text-align: center;
+            font-size: 1.2em;
+            margin-bottom: 40px;
+        }
+
+        /* Styling for sections */
+        .program-list {
+            margin-bottom: 40px;
+            border: 1px solid #34495e;
+            border-radius: 8px;
+            padding: 20px;
+            background-color: #1e1e1e;
+            /* Dark card background */
+        }
+
+        .program-list h2 {
+            color: #2980b9;
+            /* Blue color for section headings */
+            font-size: 2em;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #2980b9;
+            padding-bottom: 10px;
+        }
+
+        /* Unordered list styling */
+        .program-list ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .program-list li {
+            background-color: #333;
+            /* Dark background for each program link */
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .program-list li:hover {
+            background-color: #34495e;
+            /* Highlight effect when hovered */
+        }
+
+        a {
+            color: #f39c12;
+            /* Bright yellow color for the links */
+            text-decoration: none;
+            font-size: 1.1em;
+            display: block;
+        }
+
+        a:hover {
+            color: #ecf0f1;
+            /* Light color on hover */
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2c3e50;
+            color: #bdc3c7;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer a {
+            color: #f39c12;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #ecf0f1;
+            text-decoration: underline;
+        }
+    </style>
 </head>
 
 <body>
 
-</body>
+    <div class="container">
+        <h1>Welcome to My Programming Portfolio</h1>
+        <p>Below are links of HTML programs and C programs that I have written. Click on the program name to view
+            its details or implementation.</p>
 
-</html>
+        <input list="coder">
+        <datalist id="coder">
+            <option value="HTML"></option>
+            <option value="PROGRAMMING C"></option>
+        </datalist>
 
-<body>
-    <!--types of heading-->
+        <div class="program-list">
+            <h2>HTML Programs</h2>
+            <ul>
+                <li><a href="program1_ankit.html" target="_blank">HTML Program 1: Basic Web Page</a></li>
+                <li><a href="program2_ankit.html" target="_blank">HTML Program 2: Heading and font</a></li>
+                <li><a href="program3_ankit.html" target="_blank">HTML Program 3: Ordered & Unordered list</a></li>
+                <li><a href="program4_ankit.html" target="_blank">HTML Program 4: Bio data form</a></li>
+                <li><a href="program5_ankit.html" target="_blank">HTML Program 5: Display image</a></li>
+                <li><a href="program6_ankit.html" target="_blank">HTML Program 6: Links and Anchor</a></li>
+                <li><a href="program7_ankit.html" target="_blank">HTML Program 7: Chess board</a></li>
+                <li><a href="program8_ankit.html" target="_blank">HTML Program 8: Time Table</a></li>
+                <!-- <li><a href=" " target="_blank">HTML Program 9: Embedded Media (Audio &Video)</a></li>
+                <li><a href=" " target="_blank">HTML Program 10: CSS Styling withHTML</a></li> -->
+                <li><a href=" html_programs/program11_ankit.html" target="_blank">HTML Program 9: CSS Styling with HTML</a></li>
+                <li><a href=" html_programs/program12_ankit.html" target="_blank">HTML Program 10: SPOTIFY LOGIN Page</a></li>
+            </ul>
+        </div>
 
-    <h1>
-        <pre> <!-- jaise type hoga vaise he likha ayega -->
-            MY FIRST HTML DOCUMENT 
-    </pre>
-    </h1>
-
-    <img src="
-    https://media.tenor.com/AOdrE-TKs7cAAAAi/dancing-cat-cat-dance.gif" alt="dancing CAT" height="222">
-    <hr>
-    <h2>CLICK THE below image to OPEN FILE</h2>
-
-
-    <!-- a straight line horizontally-->
-    <!-- anchor tag-->
-    <a href="https://drive.google.com/file/d/1ncALpQumr_D-DgLd7ibl7elhWmfEAON1/view?usp=sharing"><img
-            src="https://cdn.hackr.io/uploads/posts/large/15925654385a8PArotT5.png" alt="html" length="10%"
-            bradth="10%">
-    </a><!--img to link on click-->
-    <hr>
-    <h2>CICLK ON THE CAT FOR LIST OF document</h2>
-
-    <a href="https://drive.google.com/drive/folders/17sDTdJWpWMC6W4hSkFwhTYNekYDy__FY?usp=sharing>"><img
-            src="https://media1.tenor.com/m/zkFchZifUBsAAAAC/motorcycle-shake-white-cat.gif" alt="1st white  billu"
-            length="330" width="330">
-    </a>
-    </h5>
-
-    <h2>dekh aisse img lagate hai, mai nhi batyunga
-
-    </h2>
-    kya aap please upar vala text niche copy paste kardoge 😁
-    <br>
-    <br>
-    <!-- Styled text input with a label -->
-    <style>
-        .input-box .text-input {
-            padding: 10px;
-            width: 100%;
-            /* Makes input full width */
-            border: 2px solid #000000;
-        }
-    </style>
-    <div class="input-box">
-        <label for="user-input">Enter Text:</label>
-        <input type="text" id="user-input" class="text-input" placeholder="Type something here...">
+        <div class="program-list">
+            <h2>C Programs (Sub-programming)</h2>
+            <ul>
+                <li><a href="table of any no.c" target="_blank">C Program 1: Table of any no</a></li>
+                <li><a href="sum of  matrix.c" target="_blank">C Program 2: Sum of MATRIXS</a></li>
+                <li><a href="linear search.c" target="_blank">C Program 3: Linear search</a></li>
+                <li><a href="star pattern.c" target="_blank">C Program 4: Star pattern </a></li>
+                <li><a href="pattern123.c" target="_blank">C Program 5: Pattern of 123</a></li>
+                <li><a href="palindrome_reverse.c" target="_blank">C Program 6: Palindrome and Reverse of any no.</a></li>
+                <li><a href="b.c" target="_blank">C Program 7: Check occurance of no.</a></li>
+                <!-- <li><a href="" target="_blank">C Program 8: Matrix Multiplication</a></li>
+                <li><a href="" target="_blank">C Program 9: Sorting an Array (Bubble Sort)</a></li>
+                <li><a href="" target="_blank">C Program 10: File Handling (Read/Write)</a></li> -->
+            </ul>
+        </div>
     </div>
 
-    <h1>
-        <img src="https://tse2.mm.bing.net/th?id=OIG2.p2TB6exBjTruE34cH9z8&pid=ImgGn" alt="hand" height="555">
-        <big style="color:rgb(237, 14, 211)">THIS IS BIG TEXT</big>
-        <small>THIS IS SMALL TEXT </small>
-        <center>
-
-            <h3><b>THE IS BOLD/ </b>
-                <i>THIS IS ITALIC/</i>
-                <u>THIS IS UNDERLINE</u>
-            </h3>
-
-            <h4>this<sub>is</sub>subscript = H<sub>2</sub>0 <br>
-                this <sup>is</sup>superscript = a<sup>2</sup>b </h4>
-        </center>
-
+    <footer>
+        <p>Created by REX <a href="">Contact Me</a></p>
+    </footer>
 
 </body>
 <script>
