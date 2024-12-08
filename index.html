@@ -10,8 +10,9 @@
 </head>
 
 <body>
-
-
+        <button id="toggleButton" class="moon-button"></button>
+        <script src="script.js"></script>
+ 
     <div class="container">
         <div class="content">
             <h1 class="title">Welcome to My Programming Portfolio
@@ -82,5 +83,8 @@
         event.preventDefault();
     });
 </script>
-
+<script>document.getElementById('toggleButton').addEventListener('click', function() {
+    document.body.classList.toggle('dark-mode');
+});
+</script>
 </html>
