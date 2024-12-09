@@ -1,0 +1,375 @@
+/* Overall body style */
+body {
+    background-color: #2d2d2d;
+    /* Dark background for a "programmer" feel */
+    color: #f1f1f1;
+    /* Light text for contrast */
+    font-family: 'Courier New', Courier, monospace;
+    /* Monospace font for code-like feel */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Centering the content */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    /* color: #1abc9c; */
+    /* Green color for the main heading */
+    font-size: 3em;
+    margin-top: 20px;
+}
+
+p {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+/* Styling for sections */
+.program-list {
+    margin-bottom: 40px;
+    border: 1px solid #34495e;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #1e1e1e;
+    /* Dark card background */
+}
+
+.program-list h2 {
+    color: #2980b9;
+    /* Blue color for section headings */
+    font-size: 2em;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #2980b9;
+    padding-bottom: 10px;
+}
+
+/* Unordered list styling */
+.program-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.program-list li {
+    background-color: #333;
+    /* Dark background for each program link */
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.program-list li:hover {
+    background-color: #34495e;
+    /* Highlight effect when hovered */
+}
+
+a {
+    color: #f39c12;
+    /* Bright yellow color for the links */
+    text-decoration: none;
+    font-size: 1.1em;
+    display: block;
+}
+
+a:hover {
+    color: #ecf0f1;
+    /* Light color on hover */
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    color: #bdc3c7;
+    text-align: center;
+    padding: 20px;
+    position:hover;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: #f39c12;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ecf0f1;
+    text-decoration: underline;
+}
+ /* header with aurora effect */
+ @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap");
+
+ :root {
+     --bg: #000000;
+     --clr-1: #00c2ff;
+     --clr-2: #33ff8c;
+     --clr-3: #ffc640;
+     --clr-4: #e54cff;
+     --blur: 1rem;
+     --fs: clamp(3rem, 8vw, 7rem);
+     --ls: clamp(-1.75px, -0.25vw,
+             -3.5px);
+ }
+
+ body {
+     min-height: 100vh;
+     display: grid;
+     place-items: center;
+     background-color: var(--bg);
+     color: #fff;
+     font-family: "Inter", "DM Sans", Arial, sans-serif;
+  
+ }
+
+ *,
+ *::before,
+ *::after {
+     font-family: inherit;
+     box-sizing: border-box;
+ }
+
+ .content {
+     text-align: center;
+ }
+
+ .title {
+     font-size: var(--fs);
+     font-weight: 800;
+     letter-spacing: var(--ls);
+     position: relative;
+     overflow: hidden;
+     background: var(--bg);
+     margin: 0;
+ }
+
+ .subtitle {}
+
+ .aurora {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     z-index: 2;
+     mix-blend-mode: darken;
+     pointer-events: none;
+ }
+
+ .aurora__item {
+   
+     position: absolute;
+     width: 60vw;
+     height: 60vw;
+     background-color: var(--clr-1);
+     border-radius: 37% 29% 27% 27% / 28% 25% 41% 37%;
+     filter: blur(var(--blur));
+     mix-blend-mode: overlay;
+ }
+
+ .aurora__item:nth-of-type(1) {
+     top: -50%;
+     animation: aurora-border 6s ease-in-out infinite,
+         aurora-1 5s ease-in-out infinite alternate;
+ }
+
+ .aurora__item:nth-of-type(2) {
+     background-color: var(--clr-3);
+     right: 0;
+     top: 0;
+     animation: aurora-border 6s ease-in-out infinite,
+         aurora-2 5s ease-in-out infinite alternate;
+ }
+
+ .aurora__item:nth-of-type(3) {
+     background-color: var(--clr-2);
+     left: 0;
+     bottom: 0;
+     animation: aurora-border 6s ease-in-out infinite,
+         aurora-3 3s ease-in-out infinite alternate;
+ }
+
+ .aurora__item:nth-of-type(4) {
+     background-color: var(--clr-4);
+     right: 0;
+     bottom: -50%;
+     animation: aurora-border 6s ease-in-out infinite,
+         aurora-4 13s ease-in-out infinite alternate;
+ }
+
+ @keyframes aurora-1 {
+     0% {
+         top: 0;
+         right: 0;
+     }
+
+     50% {
+         top: 100%;
+         right: 75%;
+     }
+
+     75% {
+         top: 100%;
+         right: 25%;
+     }
+
+     100% {
+         top: 0;
+         right: 0;
+     }
+ }
+
+ @keyframes aurora-2 {
+     0% {
+         top: -50%;
+         left: 0%;
+     }
+
+     60% {
+         top: 100%;
+         left: 75%;
+     }
+
+     85% {
+         top: 100%;
+         left: 25%;
+     }
+
+     100% {
+         top: -50%;
+         left: 0%;
+     }
+ }
+
+ @keyframes aurora-3 {
+     0% {
+         bottom: 0;
+         left: 0;
+     }
+
+     40% {
+         bottom: 100%;
+         left: 75%;
+     }
+
+     65% {
+         bottom: 40%;
+         left: 50%;
+     }
+
+     100% {
+         bottom: 0;
+         left: 0;
+     }
+ }
+
+ @keyframes aurora-4 {
+     0% {
+         bottom: -50%;
+         right: 0;
+     }
+
+     50% {
+         bottom: 0%;
+         right: 40%;
+     }
+
+     90% {
+         bottom: 50%;
+         right: 25%;
+     }
+
+     100% {
+         bottom: -50%;
+         right: 0;
+     }
+ }
+
+ @keyframes aurora-border {
+     0% {
+         border-radius: 37% 29% 27% 27% / 28% 25% 41% 37%;
+     }
+
+     25% {
+         border-radius: 47% 29% 39% 49% / 61% 19% 66% 26%;
+     }
+
+     50% {
+         border-radius: 57% 23% 47% 72% / 63% 17% 66% 33%;
+     }
+
+     75% {
+         border-radius: 28% 49% 29% 100% / 93% 20% 64% 25%;
+     }
+
+     100% {
+         border-radius: 37% 29% 27% 27% / 28% 25% 41% 37%;
+     }
+ }
+
+/* for dark mode button */
+ /* Basic Styles */
+ body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+/* Light Mode */
+body.light-mode {
+    background-color: #ffffff;
+    color: #ffffff;
+}
+
+/* Toggle Button */
+.dark-mode-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s;
+}
+
+/* Toggle Icon */
+.dark-mode-toggle span {
+    font-size: 24px;
+    transition: transform 0.3s;
+}
+
+/* Dark Mode Icon */
+body.dark-mode .dark-mode-toggle {
+    background-color: #333333;
+}
+
+body.dark-mode .dark-mode-toggle span {
+    transform: rotate(0deg); /* Moon Icon */
+}
+
+/* Light Mode Icon */
+body.light-mode .dark-mode-toggle span {
+    transform: rotate(180deg); /* Sun Icon */
+}
