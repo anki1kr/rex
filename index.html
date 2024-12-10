@@ -49,7 +49,7 @@
         </div>
 
         <div class="program-list">
-            <h2>C Programs (Sub-programming)</h2>
+            <h2>C Programs </h2>
             <ul>
                 <li><a href="Programming C\table of any no.c" target="_blank">C Program 1: Table of any no</a></li>
                 <li><a href="Programming C\sum of  matrix.c" target="_blank">C Program 2: Sum of MATRIXS</a></li>
@@ -70,37 +70,7 @@
     <footer>
         <p>Created by REX <a href="">Contact Me</a></p>
     </footer>
-    <script>
-document.addEventListener("copy", (e) => {
-    e.preventDefault();
-    e.clipboardData.setData("text/plain", "Padhle bhai 😛copy paste karna hai se ghar nhi chalta");
-});
 
-      </script>
-      
-    <script>
-        // Get references to elements
-        const body = document.body;
-        const toggleButton = document.getElementById('darkModeToggle');
-        const modeIcon = document.getElementById('modeIcon');
-
-        // Check and set initial mode
-        const userPreference = localStorage.getItem('darkMode') || 'dark';
-        body.className = userPreference + '-mode';
-        modeIcon.textContent = userPreference === 'dark' ? '🌙' : '☀️';
-
-        // Toggle between dark and light mode
-        toggleButton.addEventListener('click', () => {
-            const currentMode = body.classList.contains('dark-mode') ? 'dark' : 'light';
-            const newMode = currentMode === 'dark' ? 'light' : 'dark';
-
-            // Apply the new mode
-            body.className = `${newMode}-mode`;
-            modeIcon.textContent = newMode === 'dark' ? '🌙' : '☀️';
-
-            // Save the preference
-            localStorage.setItem('darkMode', newMode);
-        });
-    </script>
+      <script src="script.js"></script>
 </body>
 </html>
