@@ -151,8 +151,6 @@ footer a:hover {
      margin: 0;
  }
 
- .subtitle {}
-
  .aurora {
      position: absolute;
      top: 0;
@@ -321,55 +319,4 @@ footer a:hover {
     margin: 0;
     font-family: Arial, sans-serif;
     transition: background-color 0.3s, color 0.3s;
-}
-
-/* Dark Mode */
-body.dark-mode {
-    background-color: #121212;
-    color: #ffffff;
-}
-
-/* Light Mode */
-body.light-mode {
-    background-color: #ffffff;
-    color: #ffffff;
-}
-
-/* Toggle Button */
-.dark-mode-toggle {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50px;
-    height: 50px;
-    background-color: #f0f0f0;
-    border: none;
-    border-radius: 50%;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    cursor: pointer;
-    outline: none;
-    transition: background-color 0.3s;
-}
-
-/* Toggle Icon */
-.dark-mode-toggle span {
-    font-size: 24px;
-    transition: transform 0.3s;
-}
-
-/* Dark Mode Icon */
-body.dark-mode .dark-mode-toggle {
-    background-color: #333333;
-}
-
-body.dark-mode .dark-mode-toggle span {
-    transform: rotate(0deg); /* Moon Icon */
-}
-
-/* Light Mode Icon */
-body.light-mode .dark-mode-toggle span {
-    transform: rotate(180deg); /* Sun Icon */
 }
