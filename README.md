@@ -7,11 +7,11 @@ This is a simple, introductory HTML document designed to showcase the basics of 
 
 ## Table of Contents
 
-1. [Installation](##installation)
-2. [Usage](##usage)
+1. [Installation](#installation)
+2. [Usage](#usage)
 3. [Features](#features)
-4. [Contributing](##contributing)
-5. [License](##license)
+4. [Contributing](#contributing)
+5. [License](#license)
 
 ---
 
