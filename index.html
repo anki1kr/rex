@@ -26,7 +26,12 @@
         <p>Below are links of HTML programs and C programs that I have written. Click on the program name to view
             its details or implementation.</p>
 
-        <div class="program-list">
+        <!-- Buttons to toggle program lists -->
+        <button id="htmlButton" class="toggle-button">HTML Programs</button>
+        <button id="cButton" class="toggle-button">C Programs</button>
+
+        <!-- HTML Programs Section -->
+        <div id="htmlPrograms" class="program-list" style="display: none;">
             <h2>HTML Programs</h2>
             <ul>
                 <li><a href="html/program1_ankit.html" target="_blank">HTML Program 1: Basic Web Page</a></li>
@@ -44,7 +49,8 @@
             </ul>
         </div>
 
-        <div class="program-list">
+        <!-- C Programs Section -->
+        <div id="cPrograms" class="program-list" style="display: none;">
             <h2>C Programs </h2>
             <ul>
                 <li><a href="Programming C\table of any no.c" target="_blank">C Program 1: Table of any no</a></li>
