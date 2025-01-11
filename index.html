@@ -2,19 +2,23 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title style="font-family: 'Caflisch Script Pro Bold';">My HTML & C Programs</title>
     <link rel="stylesheet" href="index.css">
-
+    <link rel="stylesheet" href="aurora.css">
+    
+    
 </head>
 
 <body style="font-family: 'Caflisch Script ';">
 
     <div class="container">
 
+<!-- aurora effect is added in the title of the page -->
         <div class="content">
-            <h1 class="title">Welcome to My Programming Portfolio
+            <h1 class="title">Welcome to My Programming Portfolio 
                 <div class="aurora">
                     <div class="aurora__item"> </div>
                     <div class="aurora__item"> </div>
@@ -27,25 +31,107 @@
             its details or implementation.</p>
 
         <!-- Buttons to toggle program lists -->
-        <button id="htmlButton" class="toggle-button">HTML Programs</button>
-        <button id="cButton" class="toggle-button">C Programs</button>
+        <div> 
+            <button id="htmlButton" class="toggle-button">HTML Programs</button>
+            <button id="cButton" class="toggle-button">C Programs</button>
+        </div>
+
+
 
         <!-- HTML Programs Section -->
+         <br>
         <div id="htmlPrograms" class="program-list" style="display: none;">
             <h2>HTML Programs</h2>
             <ul>
-                <li><a href="html/program1_ankit.html" target="_blank">HTML Program 1: Basic Web Page</a></li>
-                <li><a href="html/program2_ankit.html" target="_blank">HTML Program 2: Heading and font</a></li>
-                <li><a href="html/program3_ankit.html" target="_blank">HTML Program 3: Ordered & Unordered list</a></li>
-                <li><a href="html/program4_ankit.html" target="_blank">HTML Program 4: Bio data form</a></li>
-                <li><a href="html/program5_ankit.html" target="_blank">HTML Program 5: Display image</a></li>
-                <li><a href="html/program6_ankit.html" target="_blank">HTML Program 6: Links and Anchor</a></li>
-                <li><a href="html/program7_ankit.html" target="_blank">HTML Program 7: Chess board</a></li>
-                <li><a href="html/program8_ankit.html" target="_blank">HTML Program 8: Time Table</a></li>
-                <li><a href="html/program9_ankit.html " target="_blank">HTML Program 9: Embedded Media (Audio
-                        &Video)</a></li>
-                <li><a href="html/program10_ankit.html " target="_blank">HTML Program 10: CSS Styling withHTML</a></li>
-                <li><a href="html/program11_ankit.html" target="_blank">HTML Program 11:Spotify Login Page</a></li>
+                <li>
+                    <div class="front">
+                        <a href="html/program1_ankit.html" target="_blank">HTML Program 1: Basic Web Page</a>
+                    </div>
+                    <div class="back">
+                        <!-- Back content here -->
+                    </div>
+                </li>
+                <li>
+                    <div class="front">
+                        <a href="html/program2_ankit.html" target="_blank">HTML Program 2: Heading and font</a>
+                    </div>
+                    <div class="back">
+                        <!-- Back content here -->
+                    </div>
+                </li>
+                <li>
+                    <div class="front">
+                        <a href="html/program3_ankit.html" target="_blank">HTML Program 3: Ordered & Unordered list</a>
+                    </div>
+                    <div class="back">
+                        <!-- Back content here -->
+                    </div>
+                </li>
+                <li>
+                    <div class="front">
+                        <a href="html/program4_ankit.html" target="_blank">HTML Program 4: Bio data form</a>
+                    </div>
+                    <div class="back">
+                        <!-- Back content here -->
+                    </div>
+                </li>
+                <li>
+                    <div class="front">
+                        <a href="html/program5_ankit.html" target="_blank">HTML Program 5: Display image</a>
+                    </div>
+                    <div class="back">
+                        <!-- Back content here -->
+                    </div>
+                </li>
+                <li>
+                    <div class="front">
+                        <a href="html/program6_ankit.html" target="_blank">HTML Program 6: Links and Anchor</a>
+                    </div>
+                    <div class="back">
+                        <!-- Back content here -->
+                    </div>
+                </li>
+                <li>
+                    <div class="front">
+                        <a href="html/program7_ankit.html" target="_blank">HTML Program 7: Chess board</a>
+                    </div>
+                    <div class="back">
+                        <!-- Back content here -->
+                    </div>
+                </li>
+                <li>
+                    <div class="front">
+                        <a href="html/program8_ankit.html" target="_blank">HTML Program 8: Time Table</a>
+                    </div>
+                    <div class="back">
+                        <!-- Back content here -->
+                    </div>
+                </li>
+                <li>
+                    <div class="front">
+                        <a href="html/program9_ankit.html " target="_blank">HTML Program 9: Embedded Media (Audio
+                            &Video)</a>
+                    </div>
+                    <div class="back">
+                        <!-- Back content here -->
+                    </div>
+                </li>
+                <li>
+                    <div class="front">
+                        <a href="html/program10_ankit.html " target="_blank">HTML Program 10: CSS Styling withHTML</a>
+                    </div>
+                    <div class="back">
+                        <!-- Back content here -->
+                    </div>
+                </li>
+                <li>
+                    <div class="front">
+                        <a href="html/program11_ankit.html" target="_blank">HTML Program 11:Spotify Login Page</a>
+                    </div>
+                    <div class="back">
+                        <!-- Back content here -->
+                    </div>
+                </li>
             </ul>
         </div>
 
@@ -53,13 +139,81 @@
         <div id="cPrograms" class="program-list" style="display: none;">
             <h2>C Programs </h2>
             <ul>
-                <li><a href="Programming C\table of any no.c" target="_blank">C Program 1: Table of any no</a></li>
-                <li><a href="Programming C\sum of  matrix.c" target="_blank">C Program 2: Sum of MATRIXS</a></li>
-                <li><a href="Programming C\linear search.c" target="_blank">C Program 3: Linear search</a></li>
-                <li><a href="Programming C\star pattern.c" target="_blank">C Program 4: Star pattern </a></li>
-                <li><a href="Programming C\pattern123.c" target="_blank">C Program 5: Pattern of 123</a></li>
-                <li><a href="Programming C\palindrome_reverse.c" target="_blank">C Program 6: Palindrome and Reverse of
-                        any no.</a>
+                <li>
+                    <div class="front">
+                        <a href="Programming C\table of any no.c" target="_blank">C Program 1: Table of any no</a>
+                    </div>
+                    <div class="back">
+                        <!-- Back content here -->
+                    </div>
+                </li>
+                <li>
+                    <div class="front">
+                        <a href="Programming C\sum of  matrix.c" target="_blank">C Program 2: Sum of MATRIXS</a>
+                    </div>
+                    <div class="back">
+                        <!-- Back content here -->
+                    </div>
+                </li>
+                <li>
+                    <div class="front">
+                        <a href="Programming C\linear search.c" target="_blank">C Program 3: Linear search</a>
+                    </div>
+                    <div class="back">
+                        <!-- Back content here -->
+                    </div>
+                </li>
+                <li>
+                    <div class="front">
+                        <a href="Programming C\star pattern.c" target="_blank">C Program 4: Star pattern </a>
+                    </div>
+                    <div class="back">
+                        <!-- Back content here -->
+                    </div>
+                </li>
+                <li>
+                    <div class="front">
+                        <a href="Programming C\pattern123.c" target="_blank">C Program 5: Pattern of 123</a>
+                    </div>
+                    <div class="back">
+                        <!-- Back content here -->
+                    </div>
+                </li>
+                <li>
+                    <div class="front">
+                        <a href="Programming C\palindrome_reverse.c" target="_blank">C Program 6: Palindrome and Reverse
+                            of
+                            any no.</a>
+                    </div>
+                    <div class="back">
+                        <!-- Back content here -->
+                    </div>
+                </li>
+                <li>
+                    <div class="front">
+                        <a href="Programming C\occurance of no.c" target="_blank">C Program 7: Check occurance of
+                            no.</a>
+                    </div>
+                    <div class="back">
+                        <!-- Back content here -->
+                    </div>
+                </li>
+                <li>
+                    <div class="front">
+                        <a href="Programming C\c2f and f2c.c" target="_blank">C Program 8:Convert Celsius to
+                            Fahrenheit</a>
+                    </div>
+                    <div class="back">
+                        <!-- Back content here -->
+                    </div>
+                </li>
+                <li>
+                    <div class="front">
+                        <a href="Programming C\01_function.c" target="_blank">C Program 9: Addition using function</a>
+                    </div>
+                    <div class="back">
+                        <!-- Back content here -->
+                    </div>
                 </li>
                 <li><a href="Programming C\occurance of no.c" target="_blank">C Program 7: Check occurance of no.</a>
                 </li>
@@ -76,8 +230,8 @@
 
     <footer>
         <img src="https://lh3.googleusercontent.com/a/ACg8ocKLuGiBxu_O2LkPrQwoBUjW1zq5NPoO_GMZDuzFu-sB_C0lbEgc=s192-c-rg-br100"
-                alt="GIF" style="vertical-align: middle; margin-right: 10px;"><p>Created by REX <a
-                href="example.com">Contact Me</a></p>
+            alt="GIF" style="vertical-align: middle; margin-right: 10px;">
+        <p>Created by REX <a href="example.com">Contact Me</a></p>
 
     </footer>
 

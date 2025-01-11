@@ -15,13 +15,17 @@ document.querySelectorAll('a').forEach(button => {
     });
 });
 
-// Toggle visibility of program lists
+// Toggle visibility of program lists with auto-hide feature
 document.getElementById('htmlButton').addEventListener('click', () => {
     const htmlPrograms = document.getElementById('htmlPrograms');
+    const cPrograms = document.getElementById('cPrograms');
     htmlPrograms.style.display = htmlPrograms.style.display === 'none' ? 'block' : 'none';
+    cPrograms.style.display = 'none';
 });
 
 document.getElementById('cButton').addEventListener('click', () => {
+    const htmlPrograms = document.getElementById('htmlPrograms');
     const cPrograms = document.getElementById('cPrograms');
     cPrograms.style.display = cPrograms.style.display === 'none' ? 'block' : 'none';
+    htmlPrograms.style.display = 'none';
 });
