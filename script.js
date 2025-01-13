@@ -1,31 +1,23 @@
+// alert("Why don't you try to copy pastethe heading ");
+
 // copy paste 
 document.addEventListener("copy", (e) => {
     e.preventDefault();
     e.clipboardData.setData("text/plain", "Padhle bhai 😛Copy-Paste karna hai se ghar nhi chalta");
 });
 
-// Example: Animate a button click
-document.querySelectorAll('a').forEach(button => {
-    button.addEventListener('click', () => {
-        button.style.transition = 'transform 0.3s ease';
-        button.style.transform = 'scale(0.95)';
-        setTimeout(() => {
-            button.style.transform = 'scale(1)';
-        }, 300);
+const buttons = {
+    htmlButton: 'htmlPrograms',
+    cButton: 'cPrograms',
+    cppButton: 'cppPrograms'
+};
+
+Object.keys(buttons).forEach(buttonId => {
+    document.getElementById(buttonId).addEventListener('click', () => {
+        Object.values(buttons).forEach(programId => {
+            document.getElementById(programId).style.display = 'none';
+        });
+        const selectedProgram = document.getElementById(buttons[buttonId]);
+        selectedProgram.style.display = 'block';
     });
-});
-
-// Toggle visibility of program lists with auto-hide feature
-document.getElementById('htmlButton').addEventListener('click', () => {
-    const htmlPrograms = document.getElementById('htmlPrograms');
-    const cPrograms = document.getElementById('cPrograms');
-    htmlPrograms.style.display = htmlPrograms.style.display === 'none' ? 'block' : 'none';
-    cPrograms.style.display = 'none';
-});
-
-document.getElementById('cButton').addEventListener('click', () => {
-    const htmlPrograms = document.getElementById('htmlPrograms');
-    const cPrograms = document.getElementById('cPrograms');
-    cPrograms.style.display = cPrograms.style.display === 'none' ? 'block' : 'none';
-    htmlPrograms.style.display = 'none';
 });
