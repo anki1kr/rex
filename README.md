@@ -81,4 +81,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 Here’s a simple example of what the `index.html` might look like in this project:
 
 ```html
-https://https://anki1kr.github.io/html/
+https://anki1kr.github.io/html/

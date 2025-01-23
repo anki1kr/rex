@@ -1,0 +1,46 @@
+/* body {
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #333;
+} */
+
+#gallery {
+    display: flex;
+    position: relative;
+    width: 80vw; /* Adjust width as needed */
+    height: 80vh; /* Adjust height as needed */
+    perspective: 1000px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Ensure no scrollbars appear */
+    touch-action: pan-y; /* Allow vertical scrolling */
+}
+
+.gallery-item {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    transition: transform 0.5s, scale 0.5s, z-index 0.5s;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Add more styles to create the circular effect */
+
+.gallery-item:hover {
+    transform: rotateY(15deg);
+}
+
+.gallery-item:hover ~ .gallery-item {
+    transform: rotateY(-15deg);
+} 
