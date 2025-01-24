@@ -1,4 +1,4 @@
-// alert("Why don't you try to copy pastethe heading ");
+alert("don't try to copy paste any content from this website");
 
 // copy paste 
 document.addEventListener("copy", (e) => {
