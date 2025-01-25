@@ -1,3 +1,4 @@
+
 // copy paste 
 document.addEventListener("copy", (e) => {
     e.preventDefault();
@@ -44,3 +45,9 @@ document.addEventListener('DOMContentLoaded', function() {
     positionItems();
     window.addEventListener('wheel', handleScroll);
 }); 
+
+    gallery.addEventListener('touchstart', handleTouchStart);
+    gallery.addEventListener('touchmove', handleTouchMove);
+    gallery.addEventListener('touchend', handleTouchEnd);
+}); 
+
