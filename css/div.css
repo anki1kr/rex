@@ -1,31 +1,23 @@
-/* body {
-    margin: 0;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #333;
-} */
-
 #gallery {
     display: flex;
-    position: relative;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
     width: 80vw; /* Adjust width as needed */
     height: 80vh; /* Adjust height as needed */
     perspective: 1000px;
-    justify-content: center;
-    align-items: center;
     overflow: hidden; /* Ensure no scrollbars appear */
     touch-action: pan-y; /* Allow vertical scrolling */
 }
 
 .gallery-item {
     position: absolute;
-    width: 200px;
-    height: 200px;
+    width: 300px; /* Increased width */
+    height: 300px; /* Increased height */
+    margin: 30px; /* Increased margin to create 30px space between items */
     transform-style: preserve-3d;
-    transition: transform 0.5s, scale 0.5s, z-index 0.5s;
+    transition: transform 0.2s ease, opacity 0.2s ease; /* Faster transitions */
+    backface-visibility: hidden; /* Hide back face */
 }
 
 .gallery-item img {
@@ -35,12 +27,6 @@
     border-radius: 10px;
 }
 
-/* Add more styles to create the circular effect */
-
 .gallery-item:hover {
-    transform: rotateY(15deg);
+    transform: scale(1.1); /* Slightly enlarge the image on hover */
 }
-
-.gallery-item:hover ~ .gallery-item {
-    transform: rotateY(-15deg);
-} 

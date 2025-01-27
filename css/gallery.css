@@ -1,0 +1,46 @@
+#gallery {
+    display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping to keep items in a single row */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    width: 100vw; /* Full viewport width */
+    overflow: hidden; /* Hide horizontal scrollbar */
+    position: relative;
+    perspective: 1000px; /* Add perspective for 3D effect */
+}
+
+.gallery-item {
+    display: inline-block; /* Display items inline */
+    position: relative;
+    width: 250px; /* Increased width for larger card-like appearance */
+    height: 300px; /* Increased height to accommodate text */
+    margin: 20px;
+    transition: transform 0.5s ease, z-index 0.5s ease; /* Smooth transition */
+    transform-style: preserve-3d; /* Preserve 3D transformations */
+    backface-visibility: hidden; /* Hide back face of items */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 200px; /* Fixed height */
+    object-fit: cover; /* Ensures the image covers the container */
+    border-radius: 10px 10px 0 0; /* Rounded top corners */
+}
+
+.gallery-item p {
+    margin: 5px 0 0 0; /* Margin for spacing */
+    font-size: 1rem; /* Font size for readability */
+    text-align: center; /* Center align text */
+    color: #333; /* Dark text color for contrast */
+    background-color: #f9f9f9; /* Light background for text area */
+    padding: 10px; /* Padding for text */
+    border-radius: 0 0 10px 10px; /* Rounded bottom corners */
+}
+
+.gallery-item:hover {
+    transform: scale(1.05); /* Slightly enlarge the card on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}

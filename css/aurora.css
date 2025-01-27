@@ -1,5 +1,3 @@
- /* header with aurora effect */
- /* @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap"); */
 
  :root {
      --bg: #000000;
@@ -23,8 +21,7 @@
   
  }
 
- *,
- *::before,
+
  *::after {
      font-family: inherit;
      box-sizing: border-box;

@@ -1,0 +1,76 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 50px; /* Further increased padding for a larger navbar */
+    background-color: #000; /* Change to black color */
+    color: white;
+    position: relative; /* Ensure it is not fixed to the top */
+    width: 100%; /* Ensure the navbar takes the full width */
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo {
+    vertical-align: middle;
+    margin-right: 10px;
+    border-radius: 50%;
+    width: 70px; /* Further increased logo size */
+    height: 70px; /* Further increased logo size */
+}
+
+.navbar-menu {
+    display: flex;
+    list-style: none;
+}
+
+.navbar-item {
+    margin-left: 30px; /* Increased margin for spacing */
+}
+
+.navbar-link {
+    color: white;
+    text-decoration: none;
+    font-size: 20px; /* Further increased font size for better readability */
+}
+
+.navbar-link:hover {
+    color: goldenrod;
+    text-decoration: underline;
+}
+
+.navbar-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    height: 4px; /* Increased bar height */
+    width: 30px; /* Increased bar width */
+    background-color: white;
+    margin: 5px 0; /* Increased margin for spacing */
+}
+
+@media (max-width: 768px) {
+    .navbar-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar-menu.active {
+        display: flex;
+    }
+
+    .navbar-toggle {
+        display: flex;
+    }
+
+    .navbar-item {
+        margin: 15px 0; /* Increased margin for mobile view */
+    }
+}
