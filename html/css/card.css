@@ -1,4 +1,4 @@
-gallery-container {
+.gallery-container {
   position: relative;
   width: 190px;
   height: 254px;
@@ -364,4 +364,3 @@ gallery-container {
   height: 500px; /* Ensure consistent height */
   border: none;
 }
-
