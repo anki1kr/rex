@@ -8,9 +8,8 @@ document.addEventListener("copy", (e) => {
     }
 });
 //
-
 document.addEventListener("DOMContentLoaded", () => {
-	// Register GSAP Plugins
+  // Register GSAP Plugins
   gsap.registerPlugin(ScrollTrigger);
   // Parallax Layers
   document.querySelectorAll('[data-parallax-layers]').forEach((triggerElement) => {
@@ -62,8 +61,3 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
-/* Lenis */
-const lenis = new Lenis();
-lenis.on('scroll', ScrollTrigger.update);
-gsap.ticker.add((time) => {lenis.raf(time * 1000);});
-gsap.ticker.lagSmoothing(0);

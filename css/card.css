@@ -386,3 +386,33 @@
     opacity: 0;
     touch-action: manipulation; /* Ensure touch responsiveness */
 }
+
+.gallery-container.active #gallery-card,
+.gallery-container.active #gallery-card .gallery-title,
+.gallery-container.active #gallery-card #prompt {
+  /* Apply the same styles as hover */
+  transition: 300ms;
+  filter: brightness(1.1);
+  opacity: 1;
+  touch-action: manipulation; /* Ensure touch responsiveness */
+}
+
+@media (max-width: 600px) {
+    .gallery-container {
+        width: 100%; /* Full width on mobile */
+        height: auto; /* Adjust height for mobile */
+    }
+
+    .gallery-title {
+        font-size: 1.2em; /* Adjust font size for smaller screens */
+    }
+
+    .gallery-subtitle {
+        font-size: 1em; /* Adjust font size for smaller screens */
+    }
+
+    .gallery-canvas {
+        grid-template-columns: repeat(3, 1fr); /* Adjust grid for smaller screens */
+        grid-template-rows: repeat(3, 1fr); /* Adjust grid for smaller screens */
+    }
+}

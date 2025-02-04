@@ -19,6 +19,18 @@
     touch-action: manipulation; /* Ensure touch responsiveness */
   }
   
+  .container.active #card,
+  .container.active #card .title,
+  .container.active #card .glowing-elements div,
+  .container.active #card .card-particles span,
+  .container.active #card #prompt {
+    /* Apply the same styles as hover */
+    transition: 300ms;
+    filter: brightness(1.1);
+    opacity: 1;
+    touch-action: manipulation; /* Ensure touch responsiveness */
+  }
+  
   #card {
     position: absolute;
     inset: 0;
@@ -699,4 +711,24 @@
   #card:hover .corner-elements span {
     border-color: rgba(92, 103, 255, 0.8);
     box-shadow: 0 0 10px rgba(92, 103, 255, 0.5);
+  }
+
+  @media (max-width: 600px) {
+    .container {
+        width: 100%; /* Full width on mobile */
+        height: auto; /* Adjust height for mobile */
+    }
+
+    .title {
+        font-size: 1.2em; /* Adjust font size for smaller screens */
+    }
+
+    .subtitle {
+        font-size: 1em; /* Adjust font size for smaller screens */
+    }
+
+    .canvas {
+        grid-template-columns: repeat(3, 1fr); /* Adjust grid for smaller screens */
+        grid-template-rows: repeat(3, 1fr); /* Adjust grid for smaller screens */
+    }
   }
