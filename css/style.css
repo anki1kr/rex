@@ -9,6 +9,13 @@ body {
     background: #000;
     color: #fff;
     overflow-x: hidden; /* Remove bottom scroll bar */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari, and Opera */
+body::-webkit-scrollbar {
+    display: none;
 }
 
 /* Centering the content */
@@ -116,7 +123,7 @@ footer {
     color: #ecf0f1;
 }
 
-/* card  */
+/* card */
 .cards-grid {
     display: flex;
     flex-wrap: wrap;
@@ -132,11 +139,5 @@ footer {
         align-items: center; /* Center align items */
         padding: 5px; /* Adjust padding for mobile */
         gap: 10px; /* Adjust gap for mobile */
-    }
-
-    .aurora-content .title1 {
-        font-size: 1.5em;
-        position: relative;
-        top: 50px;
     }
 }

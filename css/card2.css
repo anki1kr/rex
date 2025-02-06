@@ -11,26 +11,6 @@
     height: 245px;
   }
   
-  .container:active #card,
-  .container:focus #card,
-  .container:hover #card {
-    transition: 300ms;
-    filter: brightness(1.1);
-    touch-action: manipulation; /* Ensure touch responsiveness */
-  }
-  
-  .container.active #card,
-  .container.active #card .title,
-  .container.active #card .glowing-elements div,
-  .container.active #card .card-particles span,
-  .container.active #card #prompt {
-    /* Apply the same styles as hover */
-    transition: 300ms;
-    filter: brightness(1.1);
-    opacity: 1;
-    touch-action: manipulation; /* Ensure touch responsiveness */
-  }
-  
   #card {
     position: absolute;
     inset: 0;
@@ -60,6 +40,7 @@
     transform: translateX(-50%);
     z-index: 20;
     font-size: 16px;
+    font-weight: 600;
     letter-spacing: 2px;
     transition: 300ms ease-in-out;
     position: absolute;
@@ -85,14 +66,6 @@
     text-shadow:
       0 0 10px rgba(92, 103, 255, 0.5),
       0 0 20px rgba(92, 103, 255, 0.3);
-  }
-  
-  .container:active #card .title,
-  .container:focus #card .title,
-  .container:hover #card .title {
-    opacity: 1;
-    transform: translateY(-10px);
-    touch-action: manipulation; /* Ensure touch responsiveness */
   }
   
   .subtitle {
@@ -152,13 +125,6 @@
     left: 30%;
   }
   
-  .container:active #card .glowing-elements div,
-  .container:focus #card .glowing-elements div,
-  .container:hover #card .glowing-elements div {
-    opacity: 1;
-    touch-action: manipulation; /* Ensure touch responsiveness */
-  }
-  
   .card-particles span {
     position: absolute;
     width: 3px;
@@ -167,13 +133,6 @@
     border-radius: 50%;
     opacity: 0;
     transition: opacity 0.3s ease;
-  }
-  
-  .container:active #card .card-particles span,
-  .container:focus #card .card-particles span,
-  .container:hover #card .card-particles span {
-    animation: particleFloat 2s infinite;
-    touch-action: manipulation; /* Ensure touch responsiveness */
   }
   
   /* Hover effects */
@@ -265,13 +224,6 @@
     opacity: 1;
   }
   
-  .container:active #card::before,
-  .container:focus #card::before,
-  .container:hover #card::before {
-    opacity: 1;
-    touch-action: manipulation; /* Ensure touch responsiveness */
-  }
-  
   .tracker {
     position: absolute;
     z-index: 200;
@@ -285,13 +237,6 @@
   
   .tracker:hover ~ #card #prompt {
     opacity: 0;
-  }
-  
-  .container:active #card #prompt,
-  .container:focus #card #prompt,
-  .container:hover #card #prompt {
-    opacity: 0;
-    touch-action: manipulation; /* Ensure touch responsiveness */
   }
   
   .tracker:hover ~ #card {
@@ -712,23 +657,4 @@
     border-color: rgba(92, 103, 255, 0.8);
     box-shadow: 0 0 10px rgba(92, 103, 255, 0.5);
   }
-
-  @media (max-width: 600px) {
-    .container {
-        width: 100%; /* Full width on mobile */
-        height: auto; /* Adjust height for mobile */
-    }
-
-    .title {
-        font-size: 1.2em; /* Adjust font size for smaller screens */
-    }
-
-    .subtitle {
-        font-size: 1em; /* Adjust font size for smaller screens */
-    }
-
-    .canvas {
-        grid-template-columns: repeat(3, 1fr); /* Adjust grid for smaller screens */
-        grid-template-rows: repeat(3, 1fr); /* Adjust grid for smaller screens */
-    }
-  }
+  
